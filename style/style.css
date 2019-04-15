@@ -97,8 +97,8 @@ header span {
 .mainAboutMe{
     grid-area: mainIndex;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60vh;
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-rows: 70vh;
     grid-template-areas: 
     ". textAboutMe photoAboutMe ."
     ;
@@ -112,15 +112,16 @@ header span {
 }
 .textAboutMe {
     grid-area: textAboutMe;
-    background-color: rgba(255,255,255, 0.2);
+    background-color: rgba(0,0,0, 0.4);
     color: white;
 }
 .textAboutMe p {
-    font-size: 1.7rem;
-    font-weight: 400;
-    text-align: center;
-    line-height: 30px;
-    padding-top: 16vh;
+    font-size: 1.8em;
+    font-weight: 300;
+    text-align: left;
+    line-height: 44px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 /* -------------------------------Projects----------------------------------------- */
 .mainProjects{

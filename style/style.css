@@ -47,7 +47,7 @@ header span {
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 20vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+    grid-template-rows: 20vh;
     grid-template-areas: 
     "header nav nav"
     "mainIndex mainIndex mainIndex"
@@ -63,21 +63,20 @@ header span {
     grid-area: mainIndex;
     display: grid;
     grid-template-columns: 1fr ;
-    grid-template-rows: 80vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+    grid-template-rows: 50vh 30vh;
     grid-template-areas: 
+    " . "
     " paragCenterIndex "
     ;
 }
 .paragCenterIndex {
     width: 50%;
-    height: 50%;
-    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    
 }
+
 .paragCenterIndex p{
     grid-area: paragCenterIndex;
     font-size: 3rem;
@@ -91,7 +90,6 @@ header span {
     font-size: 3rem;
     color: #F3930F;
     text-align: center;
-    /* line-height: 70vh; */
     font-weight: 400; 
     text-decoration: none;
 }
@@ -100,14 +98,14 @@ header span {
     grid-area: mainIndex;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+    grid-template-rows: 60vh;
     grid-template-areas: 
     ". textAboutMe photoAboutMe ."
     ;
 }
 .photoAboutMe{
     grid-area: photoAboutMe;
-    background-image: url(../images/person.jpeg);  /* https://www.w3schools.com/cssref/pr_background-image.asp */
+    background-image: url(../images/person.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -259,7 +257,7 @@ header span {
     grid-area: mainIndex;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 70vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+    grid-template-rows: 70vh;
     grid-template-areas: 
     ". tableDev ."
     ;
@@ -291,7 +289,7 @@ header span {
 }
 @media only screen and (max-width:1024px){
     body{
-        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(../images/light.jpeg);  /* https://www.w3schools.com/cssref/pr_background-image.asp */
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(../images/light.jpeg); 
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
@@ -330,7 +328,7 @@ header span {
     .grid {
         display: grid;
         grid-template-columns: 1fr 3fr 1fr ;
-        grid-template-rows: 10vh 15vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 10vh 15vh;
         grid-template-areas: 
         ". header ."
         ". nav ."
@@ -348,7 +346,7 @@ header span {
         grid-area: mainIndex;
         display: grid;
         grid-template-columns: 1fr ;
-        grid-template-rows: 80vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 80vh;
         grid-template-areas: 
         " paragCenterIndex "
         ;
@@ -358,7 +356,7 @@ header span {
         font-size: 3rem;
         color: white;
         text-align: center;
-        line-height: 70vh;
+        line-height: 50px;
         font-weight: 300; 
     }
     .paragCenterIndex p a{
@@ -366,7 +364,6 @@ header span {
         font-size: 3rem;
         color: #F3930F;
         text-align: center;
-        line-height: 70vh;
         font-weight: 400; 
         text-decoration: none;
     }
@@ -386,14 +383,14 @@ header span {
     }
     /* --------------------------About Me------------------------------------------ */
     .mainAboutMe{
-        grid-template-rows: 40vh 30vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 40vh 30vh;
         grid-template-areas: 
         ". photoAboutMe photoAboutMe ."
         ". textAboutMe textAboutMe ."
         ;
     }
     .photoAboutMe{
-        background-position: 50% 30%;/* https://www.w3schools.com/cssref/pr_background-position.asp */
+        background-position: 50% 30%;
     }
 
     .textAboutMe p {
@@ -438,7 +435,7 @@ header span {
     
     .grid {
         grid-template-columns: 1fr ;
-        grid-template-rows: 10vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 10vh;
         grid-template-areas: 
         "header"
         "nav"
@@ -452,7 +449,7 @@ header span {
         grid-area: nav;   
     }
     .mainIndex{
-        grid-template-rows: 50vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 50vh;
     }
     .paragCenterIndex p{
         line-height: 10vh;

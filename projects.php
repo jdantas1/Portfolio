@@ -21,10 +21,10 @@
         <div class="nav">
             <nav>
                 <ul id="navBar">
-                    <li><a class="hrefLink" href="contact.html">Contact</a></li>
+                    <li><a class="hrefLink" href="contact.php">Contact</a></li>
                     <li><a class="hrefLink" href="#">Projects</a></li>
-                    <li><a class="hrefLink" href="aboutMe.html">About Me</a></li>
-                    <li><a class="hrefLink" href="index.html">Home</a></li>
+                    <li><a class="hrefLink" href="aboutMe.php">About Me</a></li>
+                    <li><a class="hrefLink" href="index.php">Home</a></li>
                 </ul>
             </nav>
         </div>

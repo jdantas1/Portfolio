@@ -98,7 +98,7 @@ header span {
     grid-area: mainIndex;
     display: grid;
     grid-template-columns: 1fr 400px 400px 1fr;
-    grid-template-rows: 70vh;
+    grid-template-rows: 550px;
     grid-template-areas: 
     ". textAboutMe photoAboutMe ."
     ;
@@ -130,7 +130,7 @@ header span {
     grid-column-gap: 5vw;
     grid-row-gap:5vw;
     grid-template-columns: 1fr 2fr 2fr 1fr;
-    grid-template-rows: 30vh 30vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+    grid-template-rows: 30vh 30vh;
     grid-template-areas: 
     ". photoProject1 photoProject2 ."
     ". photoProject3 photoProject4 ."
@@ -138,7 +138,7 @@ header span {
 }
 .photoProject1{
     grid-area:photoProject1;
-    background-image: url(../images/moonLander.png);  /* https://www.w3schools.com/cssref/pr_background-image.asp */
+    background-image: url(../images/moonLander.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -146,7 +146,7 @@ header span {
 }
 .photoProject2{
     grid-area:photoProject2; 
-    background-image: url(../images/addmein.png);  /* https://www.w3schools.com/cssref/pr_background-image.asp */
+    background-image: url(../images/addmein.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -154,7 +154,7 @@ header span {
 }
 .photoProject3{
     grid-area:photoProject3; 
-    background-image: url(../images/underConst.jpeg);  /* https://www.w3schools.com/cssref/pr_background-image.asp */
+    background-image: url(../images/portfolioPic.png); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -162,7 +162,7 @@ header span {
 }
 .photoProject4{
     grid-area:photoProject4; 
-    background-image: url(../images/underConst.jpeg);  /* https://www.w3schools.com/cssref/pr_background-image.asp */
+    background-image: url(../images/underConst.jpeg); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -198,26 +198,67 @@ header span {
 .mainContacts{
     grid-area: mainIndex;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+    grid-template-columns: 1fr 300px 300px 1fr;
+    grid-template-rows: 90px 500px;
     grid-template-areas: 
-    ". formContact ."
+    ". phoneField emailField ."
+    ". formContact formContact ."
 
     ;
 }
 .formContact{
     grid-area: formContact;
-    height: 70vh;
     color: #ffffff;
-
 }
-.formContact fieldset{
-    height: 500px;
-    padding-left: 4vw;
-    padding-right: 4vw;
+
+.phoneField{
+    grid-area: phoneField;
+    color: #ffffff;
     background-color: rgba(0,0,0, 0.4);
     border-radius: 5px;
+}
+.emailField{
+    grid-area: emailField;
+    color: #ffffff;
+    background-color: rgba(0,0,0, 0.4);
+    border-radius: 5px;
+}
 
+
+.phoneField legend{
+    font-size: 3rem;
+    text-align: center;
+    color: #f8204b;
+}
+.phoneField span{
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    font-weight: 100;
+}
+.emailField span{
+    font-size: 3rem;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+}
+
+.emailField legend{
+    font-size: 3rem;
+    text-align: center;
+    color: #f8204b;
+}
+
+
+.formContact fieldset{
+    
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 5px;
+    background-color: rgba(0,0,0, 0.4);
+}
+.formContact fieldset p{
+    font-size: 2em;
 }
 .formContact fieldset legend{
     font-size: 3rem;
@@ -253,44 +294,10 @@ header span {
     color: #f8204b;
     margin-right: 5px;
 }
-/* --------------------------------------------Developing------------------------------- */
-.mainDev{
-    grid-area: mainIndex;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 70vh;
-    grid-template-areas: 
-    ". tableDev ."
-    ;
-}
-.tableDev{
-    grid-area: tableDev;
-    color: white;
-    border: 1px solid;
-    border-collapse: collapse;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-.tableDev th {
-    border: 1px solid;
-    text-align: center;
-    color: white;
-}
-.tableDev tr {
-    border: 1px solid;
-    text-align: center;
-    color: white;
-}
-.tableDev td {
-    border: 1px solid;
-    text-align: center;
-    color: white;
-}
+
 @media only screen and (max-width:1024px){
     body{
-        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.5)), url(../images/light.jpeg); 
+        background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.7)), url(../images/light.jpeg); 
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
@@ -465,29 +472,33 @@ header span {
         grid-area: mainIndex;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 300px;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 600px 300px;
         grid-template-areas: 
         "textAboutMe"
         "photoAboutMe"
         ;
     }
     .photoAboutMe{
+        grid-area: photoAboutMe;
         background-size: contain;
+        display: block;
     }
     .textAboutMe {
         grid-area: textAboutMe;
-        background-color: rgba(0,0,0, 0.3);
+        display: block;
+        background-color: rgba(0,0,0, 0.6);
         color: white;
     }
     .textAboutMe p {
         font-size: 1.7rem;
         padding-top: 50px;
+        text-align: justify;
     }
     /* -------------------------------Projects----------------------------------------- */
     .mainProjects{
         grid-row-gap:5vw;
         grid-template-columns: 1fr;
-        grid-template-rows: 50vh 50vh 50vh 50vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 50vh 50vh 50vh 50vh;
         grid-template-areas: 
         "photoProject2"
         "photoProject1"
@@ -509,8 +520,10 @@ header span {
         grid-area: mainIndex;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 70vh;/* I consulted this sources to get a hang of the vh and vw: https://www.youtube.com/watch?v=qrduUUdxBSY and https://www.w3schools.com/cssref/css_units.asp */
+        grid-template-rows: 90px 90px;
         grid-template-areas: 
+        "emailField"
+        "phoneField"
         "formContact"
         ;
     }
